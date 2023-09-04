@@ -1,6 +1,6 @@
 {
   "name": "expressogo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Express.js project initialization and installation tool",
   "main": "index.js",
   "type": "commonjs",
