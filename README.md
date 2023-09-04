@@ -1,6 +1,6 @@
 # ExpressoGo - Your Express.js Project Initialization Tool
 
-![ExpressoGo Logo](https://github.com/AyubAhmed0/expressogo/blob/HEAD/expressoGoLogo.png?raw=true)
+![ExpressoGo Logo](https://github.com/AyubAhmed0/expressogo/raw/main/expressoGoLogo.png?raw=true)
 
 ExpressoGo is a command-line tool that simplifies the process of creating a new Express.js project. With ExpressoGo, you can quickly generate the basic structure for your Express.js application, including CRUD route files, middleware setup, and common npm package installation.
 
