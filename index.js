@@ -4,7 +4,7 @@ const { execSync } = require("child_process");
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-// Function to display custom ASCII art
+// Function to display custom art
 function displayLogo() {
   console.log(`
   
@@ -18,7 +18,7 @@ function displayLogo() {
 }
 
 async function main() {
-   // Display the ASCII art logo
+   // Display the art logo
    displayLogo();
   console.log(
     "Welcome to ExpressoGo - Your Express.js project initialization tool"
@@ -37,7 +37,7 @@ async function main() {
 
   console.log("Initializing a new Express.js project...");
 
-  // Initialize the project using npm init (customize as needed)
+  // Initialise the project using npm init (customise as needed)
   execSync("npm init -y", { stdio: "inherit" });
 
   console.log("Installing Express.js...");
@@ -185,19 +185,18 @@ async function main() {
     "chai",
     "supertest",
     "nodemon", // Nodemon for auto-restarting the server (development dependency)
-    // Add more dev packages here
   ];
 
   execSync(`npm install --save-dev ${devPackages.join(" ")}`, {
     stdio: "inherit",
   });
 
-  // Update your package.json scripts
+  // Update package.json scripts
   const path = require("path");
   const packageJSONPath = path.join(process.cwd(), "package.json");
   const packageJSON = require(packageJSONPath);
   packageJSON.scripts = {
-    start: "node app.js", // The script to start your Express app
+    start: "node app.js", // The script to start Express app
     dev: "nodemon app.js", // Use nodemon for development to auto-restart the server
     test: 'echo "Error: no test specified" && exit 1',
   };
